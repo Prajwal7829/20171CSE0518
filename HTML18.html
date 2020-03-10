@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>pseudo-class-element</title>
+</head>
+
+<style>
+span.a{
+display:inline;
+color:red;
+background-color:black;
+text-decoration:line-through;
+border-style:outset;
+}
+span.b{
+display:block;
+color:purple;
+size:30%;
+border-style:dotted;
+}
+span.c{
+display:inline block;
+color:black;
+border:2px red;
+background-color:blue;
+border-style:solid;
+}
+
+
+a{
+text-decoration:none;
+}
+a:link{color:red;}
+a:visited{color:grey;}
+a:hover{color:green;}
+a:active{color:purple;}
+
+p::first-line{
+color:red;}
+p::first-letter{
+color:green;}
+
+::selection{color:cyan;
+background-color:purple;}
+div:hover span{
+display:block;
+}
+
+div p{background-color:yellow;
+padding:20px;
+}
+
+
+</style>
+
+<body>
+<P>hello<span class="a">there are so many people</span></p>
+<p>ss<span class="b">wassup people who are here</span></p>
+<p>ddd<span class="c">peopel wanna grab a bite</span></p>
+<center>
+<a  href="https://www.google.com/" target=new>click</a>
+</center>
+<p>I can swallow a bottle of alcohol and I'll feel like Godzilla
+Better hit the deck like the card dealer
+My whole squad's in here, walking around the party
+A cross between a zombie apocalypse and big Bobby "The
+</p>
+<div>
+<p>n AA with an AK, melee, finna set<span> it like a playdate
+Better vacate, retreat like a</span> vacay, mayday (ayy)</p>
+</div>
+</body>
+</html>
